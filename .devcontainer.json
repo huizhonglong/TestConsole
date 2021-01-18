@@ -1,3 +1,1 @@
-{
-  "postCreateCommand": "Powershell.exe -ExecutionPolicy unrestricted -File .\\UpdateVS.ps1 \"https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VS/135a1a5a50ceb6ff34cff5a4a6b3d30578c21da3/661bd333-2f17-34a0-8bea-a80352be8539;VisualStudio.16.ServerIntPreview.chman\""
-}
+Test
