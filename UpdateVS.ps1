@@ -17,8 +17,11 @@ $updateVSLogFile = "c:\workspace\UpdateVS.log"
 if (Test-Path $updateVSLogFile) {
     Remove-Item -Force $updateVSLogFile
   }
+
+Set-Content -Path $updateVSLogFile -Force -Value (Get-Date).ToString("yyyy-MM-ddTHH:mm:ss")
+Add-Content -Path $updateVSLogFile -Force -Value $installChannelUri
 $vsInstanceManagerPath = "C:\vsonline\vsoagent\bin\VSInstanceManager.exe"
 $installProcess = Start-Process $vsInstanceManagerPath -ArgumentList "update --installChannelUri `"$installChannelUri`"" -PassThru
 $installProcess.WaitForExit()
-Set-Content -Path $updateVSLogFile -Force -Value $installProcess.ExitCode
-Add-Content -Path $updateVSLogFile -Force -Value $installChannelUri
+Add-Content -Path $updateVSLogFile -Force -Value (Get-Date).ToString("yyyy-MM-ddTHH:mm:ss")
+Add-Content -Path $updateVSLogFile -Force -Value "Updating completed with exit code - $($installProcess.ExitCode)"
