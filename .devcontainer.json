@@ -1,1 +1,3 @@
-Test
+{
+    "postCreateCommand":  "Powershell.exe -ExecutionPolicy unrestricted -File .\\UpdateVS.ps1"
+}
