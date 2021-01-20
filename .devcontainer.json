@@ -1,3 +1,3 @@
 {
-    "postCreateCommand":  "Powershell.exe -ExecutionPolicy unrestricted -File .\\UpdateVS.ps1 \"https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VS/337415f7420d21c401514a0789ba75334a9e9e6c/3bc494ff-c632-d3d1-ba95-ddc45e7be785;VisualStudio.16.ServerIntPreview.chman\""
+    "postCreateCommand":  "Powershell.exe -ExecutionPolicy unrestricted -File .\\UpdateVS.ps1 \"https://vsdrop.corp.microsoft.com/file/v1/Products/DevDiv/VS/b644c5848c484823d0aadae9cc33105befe75a9d/91c4cc7a-f734-6c00-d534-46f81e9a6305;VisualStudio.16.ServerIntPreview.chman\""
 }
